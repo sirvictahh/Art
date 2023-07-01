@@ -1,0 +1,150 @@
+/*PRJ.ARTE  - FOLHA DE ESTILOS*/
+
+/* 1. Estilos gerais e de tipografia */
+/* Estiliza o corpo da página */
+body {
+    background-color:#d0c0b0;
+}
+
+/* Estiliza o título de nível 1 (h1) */
+h1 {
+    font:bold 30px arial; 
+    color:#90a0b0; 
+    border-bottom:3px solid #8090a0; 
+    margin:0px;
+}
+
+/* Estiliza o título de nível 2 (h2) */
+h2 {
+    font:bold 22px arial; 
+    color:#908070; 
+    margin:0px 0px 25px 0px;
+}
+
+/* Estiliza a secção de botões */
+
+section {
+    width:880px; 
+    padding:5px 0px;
+}
+
+
+/* Estiliza botões e elementos select */
+button, select {
+    margin-right:3px;
+    font:16px arial; 
+    padding:0px 8px; 
+    cursor:pointer; 
+}
+
+/* Estiliza o parágrafo (p) */
+p {
+    font:16px/1.5 verdana; 
+    margin:0px 0px 20px 0px;
+}
+
+/* Estiliza elemento com id "vista" */
+#vista {
+    border: 3px solid rgb(0, 0, 0); 
+    margin-bottom: 30px; font: bold 12px arial; 
+    text-align: center; 
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    cursor: pointer;
+}
+
+/* Estiliza elemento com id "vista" no estado hover (quando o mouse está sobre ele) */
+#vista:hover {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+}
+
+/* Estiliza a imagem dentro do elemento com id "vista" */
+#vista img {
+    width: 100%;
+}
+
+/* 2. Estilos para a introdução */
+/* Estiliza a seção de introdução */
+#introd {
+    width: 900px; 
+    border: 6px solid rgb(144, 128, 112); 
+    margin: 0px auto; 
+    background-color: rgb(144, 128, 112); 
+    overflow: auto; 
+    display: block;
+}
+
+/* Estiliza a parte esquerda da seção de introdução */
+#leftIntrod {
+    width:150px; 
+    padding:25px 25px 25px 50px; 
+    float:left;
+}
+
+/* Estiliza a parte direita da seção de introdução */
+#rightIntrod {
+    width:600px; 
+    padding:25px 50px 25px 25px; 
+    background-color:#ffffff; 
+    float:left;
+}
+
+/* 3. Estilos para a secção de pintores */
+/* Estiliza a seção de pintores */
+#pintores {
+    width: 900px;
+    border: 6px solid rgb(144, 128, 112); 
+    margin: 0px auto; 
+    background-color: rgb(144, 128, 112); 
+    overflow: auto; 
+    display: block;
+}
+
+/* Estiliza a parte esquerda da seção de pintores */
+#cLeftPainter{
+    width:150px; padding:25px 25px 25px 50px; float:left;
+}
+
+/* Estiliza a parte direita da seção de pintores */
+#cRightPainter {
+    width:600px; 
+    padding:25px 50px 25px 25px; 
+    background-color:#ffffff; 
+    float:left;
+}
+
+/* Estiliza o cartão do pintor */
+#cardPintor {
+    width:250px; 
+    text-align:center;
+}
+
+/* 4. Estilos para a seção de obras */
+/* Estiliza a seção de obras */
+#obras {
+    width: 900px; 
+    border: 6px solid rgb(144, 128, 112); 
+    margin: 0px auto; 
+    background-color: rgb(144, 128, 112); 
+    display: block;
+}
+
+/* Estiliza o conteúdo da obra de arte */
+#cArtwork {
+    width:800px; 
+    padding:50px; 
+    background-color:#ffffff;
+}
+
+/* Estiliza a obra de arte */
+#obra {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Estiliza as imagens da obra */
+#obras img {
+    width: 100%;
+}

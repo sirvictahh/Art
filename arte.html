@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+PRJ.ARTE - Projeto de apresentação de conteúdos sobre "Expressionismo Abstrato", a partir de uma estrutura de dados, destinado à avaliação de competências, no ano letivo de 2022-2023, do aluno n.º 24728, João Víctor Maia.-->
+<html lang="pt">
+	<head>
+		<meta charset="utf-8" /> <!-- Define a codificação de caracteres do documento como UTF-8 -->
+		<title>PRJ.ARTE</title> 
+		<link href="arte.css" rel="stylesheet" type="text/css"> <!-- Importa o arquivo CSS para estilização da página -->
+		<script src="arte_DADOS.js"></script> <!-- Importa o arquivo JavaScript com os dados do projeto -->
+		<script src="arte_PARS.js"></script> <!-- Importa o arquivo JavaScript com as funções de parseamento -->
+		<script src="arte_FUNCS.js"></script> <!-- Importa o arquivo JavaScript com as funções principais -->
+	</head>
+	<!-- Quando o corpo do documento é carregado, a função "inic()" é chamada -->
+	<body onload="inic()">
+
+		<!-- Divisão principal da introdução -->
+		<div id="introd">
+			<div id="leftIntrod"></div> <!-- Divisão da esquerda da introdução -->
+			<div id="rightIntrod"></div> <!-- Divisão da direita da introdução -->
+		</div>
+
+		<!-- Divisão principal dos pintores -->
+		<div id="pintores">
+			<!-- Secção dos botões -->
+			<section id="buttons">
+				<button onclick="cIntrod()">Ver Introdução</button>
+				<button onclick="nextPainter(-1)">Pintor Anterior</button>
+				<button onclick="nextPainter(1)">Pintor Seguinte</button>
+				<select id="painterID" onchange="choosePainter()"></select>
+			</section>
+			<div id="cLeftPainter"></div> <!-- Divisão da esquerda dos pintores -->
+			<div id="cRightPainter"></div> <!-- Divisão da direita dos pintores -->
+		</div>
+
+		<!-- Divisão principal das obras -->
+		<div id="obras">
+			<!-- Secção dos botões -->
+			<section id="buttons">
+				<button onclick="cIntrod()">Ver Introdução</button>
+				<button onclick="beginning()">Ver Pintor</button>
+				<button onclick="nextArt(-1)">Obra Anterior</button>
+				<button onclick="nextArt(1)">Obra Seguinte</button>
+				<select id="artID" onchange="chooseArt()"></select>
+			</section>
+			<div id="cArtwork"></div> <!-- Divisão para exibir a obra -->
+		</div>
+
+	</body>
+</html>
